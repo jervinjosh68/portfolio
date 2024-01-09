@@ -129,6 +129,7 @@
     }
     .projects_button{
       text-align: center;
+      padding-bottom: 20px;
     }
     .projects_try_it{
       background-color:  #dc441a;
@@ -140,6 +141,15 @@
       padding-right: 20px;
       padding-left: 20px;
       font-weight: 500;
+      cursor:pointer;
+    }
+    .projects_try_it:hover{
+      box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
+    }
+    .projects_try_it:active{
+      transform: translate(2px,2px) ;
+      box-shadow: none;
+
     }
     .projects_page,
     .projects_button_box {
@@ -158,6 +168,73 @@
     .projects_description{
       font-size: 16px;
       text-align: justify;
+    }
+    .exp_page_header{
+      background-color: #5B7F98;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      padding-top: 20px;
+      text-align: left;
+      padding-left: 100px;
+    }
+    .exp_page{
+      background-color: #5B7F98;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+    .company_logo_box{
+      padding-top: 30px;
+      padding-left: 150px;
+      padding-bottom: 30px;
+      padding-right: 50px;
+    }
+    .exp_description_box{
+      display: flex;
+      flex-direction: column;
+    }
+    .tcs_logo{
+      width: 200px;
+      border-radius: 50%;
+    }
+    .job_title{
+      font-weight: 500;
+      font-size: 21px;
+    }
+    .job_duration{
+      margin-top: -25px;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    .job_description{
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .educ_page_header{
+      font-weight: 600;
+      font-size: 22px;
+      padding-top: 20px;
+      text-align: left;
+      padding-left: 100px;
+    }
+    .educ_page{
+      display: flex;
+      align-items: center;
+    }
+    .univ_logo_box{
+      padding-left: 150px;
+    }
+    .univ_logo{
+      width: 70px;
+    }
+    .college_logo{
+      width:200px;
+    }
+    .educ_univ{
+      display: flex;
+      align-items: center;
     }
   </style>
 </head>
@@ -280,14 +357,62 @@
     </div>
     <div class="projects_button_box">
       <div class="projects_button">
-        <button class="projects_try_it"> Try it !</button>
+        <button class="projects_try_it" onclick="window.location.href='https://huggingface.co/spaces/jervinjosh68/AQC-Net-PH-space'"> Try it !</button>
       </div>
       <div class="projects_button">
-        <button class="projects_try_it"> Try it !</button>
+        <button class="projects_try_it" onclick="window.location.href='https://huggingface.co/spaces/jervinjosh68/vit-age-classifier'"> Try it !</button>
+      </div>
+    </div>
+    <div class="exp_page_header">
+      <p>Technical Experience</p>
+    </div>
+    <div class="exp_page">
+      <div  class="company_logo_box">
+        <img class="tcs_logo" src="/photos/tcs.png">
+      </div>
+      <div class="exp_description_box">
+        <div class="job_title">
+          <p>Coding Coach and Curriculum Editor</p>
+        </div>
+        <div class="job_duration">
+          <p>September 2020 to September 2021</p>
+        </div>
+        <div class="job_description">
+          <ul>
+            <li> 
+              Instructed students aged 7-19 on the fundamentals of Python and how to apply it in various domains. 
+            </li>
+            <li>
+              Developed and revised educational resources and instructional guides for the coaches to follow.
+            </li>
+            <li>
+              Collaborated with the management and other coaches to provide feedback and suggestions on how to enhance the curriculum.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="educ_page_header">
+      <p> Education </p>
+    </div>
+    <div class="educ_page">
+      <div class="educ_description_box">
+        <div class="educ_degree">
+          <p> Bachelor of Science in Electronics Engineer</p>
+        </div>
+        <div class="educ_univ">
+          <div class ="univ_logo_box">
+            <img class="univ_logo" src="/photos/up-logo-1024x1024.webp">
+          </div>
+          <div class="univ_name">
+            <p> University of the Philippines - Diliman </p>
+          </div>
+          
+        </div>
       </div>
     </div>
     <div class="page">
-        
+      
     </div>
   </div>
 
