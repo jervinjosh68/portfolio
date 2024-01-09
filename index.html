@@ -12,6 +12,9 @@
     p {
       font-family: Roboto Serif, Roboto, Arial;
     }
+    .page{
+      height: 1000px;
+    }
     .prof_pic{
       height: 300px;
       border-radius: 50%;
@@ -97,6 +100,7 @@
     .skills_page_content{
       display: flex;
       justify-content: space-around;
+      padding-bottom: 20px;
     }
     .skills_page_content_header{
       font-weight: 500;
@@ -112,6 +116,48 @@
       padding-left: 20px;
       font-size: 14px;
       font-weight: 400;
+    }
+    .projects_title{
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+    }
+    .projects_box{
+      padding-left:30px;
+      padding-right:30px;
+      padding-bottom: 20px;
+    }
+    .projects_button{
+      text-align: center;
+    }
+    .projects_try_it{
+      background-color:  #dc441a;
+      color: white;
+      border-color:  #dc441a;
+      font-family: Roboto Serif, Roboto, Arial;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+      font-weight: 500;
+    }
+    .projects_page,
+    .projects_button_box {
+      background-color:#f0efed;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 20px;
+    }
+    .projects_page_header{
+      font-size: 22px;
+      font-weight: 600;
+      padding-top: 20px;
+      text-align: center;
+      background-color: #f0efed;
+    }
+    .projects_description{
+      font-size: 16px;
+      text-align: justify;
     }
   </style>
 </head>
@@ -138,25 +184,11 @@
         <div class="language_box">
           <div class="language_icon"> <i class="devicon-python-plain"></i> </div>
           <div class="language_icon"> <i class="devicon-cplusplus-plain"></i> </div>
-          <div class="language_icon"> <i class="devicon-latex-original"></i>
-          </div>
-          <div class="language_icon"> <i class="devicon-html5-plain"></i>
-          </i>
-          </div>
-          <div class="language_icon"> <i class="devicon-css3-plain"></i>
-          </i>
-          </div>
-          <div class="language_icon"> <i class="devicon-java-plain"></i>
-          </i>
-          </div>
-          <div class="language_icon"> <i class="devicon-javascript-plain"></i>
-          </i>
-          </i>
-          </div>
-          <div class="language_icon"> <i class="devicon-mysql-plain"></i>
-          </i>
-          </i>
-          </div>
+          <div class="language_icon"> <i class="devicon-latex-original"></i> </div>
+          <div class="language_icon"> <i class="devicon-html5-plain"></i> </div>
+          <div class="language_icon"> <i class="devicon-css3-plain"></i> </div>
+          <div class="language_icon"> <i class="devicon-java-plain"></i> </div>
+          <div class="language_icon"> <i class="devicon-javascript-plain"></i></div>
 
         </div>
       </div>   
@@ -179,7 +211,8 @@
             <p class="skills_page_category">
               Knowledgeable in: 
             </p>
-            <p class="skills_page_text"> HTML, CSS, Latex, Vim</p>
+            <p class="skills_page_text"> C++, HTML, CSS,</p>
+            <p class="skills_page_text">  Git, Latex, Vim</p>
           </div>
           <div class="tools_lang_exp">
             <p class="skills_page_category">
@@ -189,21 +222,72 @@
             <p class="skills_page_text">  Docker, IntelliJ, Postman</p>
           </div>
         </div>
-        <div>
+        <div class="quant_res_skills">
           <p class="skills_page_content_header">
             Quantitative Research</p>
+          <div class="quant_res_knowledgeable">
+            <p class="skills_page_category">
+              Knowledgeable in: 
+            </p>
+            <p class="skills_page_text"> Machine Learning, Deep Learning</p>
+          </div>
+          <div class="quant_res_exp">
+            <p class="skills_page_category">
+              Experienced using: 
+            </p>
+            <p class="skills_page_text"> Data Cleaning, Data Pre-processing</p>
+          </div>
         </div>
-        <div>
+        <div class="comms_skills">
           <p class="skills_page_content_header">
-            Communication</p>
+            Tools and Languages</p>
+          <div class="comms_proficient">
+            <p class="skills_page_category">
+              Proficient in: 
+            </p>
+            <p class="skills_page_text"> English, Filipino</p>
+          </div>
+          <div class="comms_exp">
+            <p class="skills_page_category">
+              Experienced using: 
+            </p>
+            <p class="skills_page_text"> German / Deutsch</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="page" style="background-color: #BDC4C9;">
-      test    
+    <div class="projects_page_header">
+      <p class="projects_header"> Projects </p>
     </div>
-    <div class="page" style="background-color: #B95C41;">
-      test    
+    <div class="projects_page">
+        <div class="projects_box">
+          <div class="projects_title">
+            <p> AQC-Net PH</p>
+          </div>
+          
+          <p class="projects_description">
+            The program uses sky images to calculate a range of air quality index (AQI) values. AQC-Net PH is an image-based deep learning model finetuned on a data-set created in the National Capital Region (NCR) of the Philippines using low-cost sensor (Nova PM SDS011) data. This served as my undergraduate capstone project for EEE 199. It is now currently hosted in a Hugging Face Space. 
+          </p>
+        </div>
+        <div class="projects_box">
+          <div class="projects_title">
+            <p> ViT Age Classifier </p>
+          </div>
+          <p class="projects_description">
+            The program calculates a range of possible ages for a person from their image, using a Vision Transformer model. The model is acquired from Hugging Face Model Hub and launched in a Hugging Face Space using Gradio. 
+          </p>
+        </div>
+    </div>
+    <div class="projects_button_box">
+      <div class="projects_button">
+        <button class="projects_try_it"> Try it !</button>
+      </div>
+      <div class="projects_button">
+        <button class="projects_try_it"> Try it !</button>
+      </div>
+    </div>
+    <div class="page">
+        
     </div>
   </div>
 
