@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400;1,8..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <style>
+    p {
+      font-family: Roboto Serif, Roboto, Arial;
+    }
+    .prof_pic{
+      height: 300px;
+      border-radius: 50%;
+      border: rgb(80, 78, 78);
+      border-width: 2px;
+      border-style: solid;
+    }
+    .hero_name{
+      color : white;
+      font-weight: 500;
+      font-size: 50px;
+    }
+    .title{
+      color : #BDC4C9;;
+      font-weight: 400;
+      font-size: 22px;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+    }
+    .hero_page {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero_page{
+      height: 400px
+    }
+    .pic_box{
+      padding-left:50px;
+      
+    }
+    .name_box{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-width: 200px;
+    }
+    .first_name,
+    .last_name,
+    .title_box{
+      display: block;
+      position: relative;
+      text-align: start;
+      font-size: 50px;
+      padding-left: 50px;
+      padding-right: 100px;
+    }
+    .first_name{
+      margin-bottom: -50px;
+    }
+    .last_name{
+      margin-top:-50px;
+    }
+
+    .language_box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      font-size: 30px;
+      color: #BDC4C9;
+      padding-left: 40px;
+      padding-bottom: 70px;
+    }
+    .language_icon{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .skills_page{
+      display: flex;
+      flex-direction: column;
+      font-family: Roboto Serif;
+    }
+    .skills_page_header{
+      font-size: 22px;
+      font-weight: 600;
+      padding-top: 20px;
+      padding-left: 100px;
+    }
+    .skills_page_content{
+      display: flex;
+      justify-content: space-around;
+    }
+    .skills_page_content_header{
+      font-weight: 500;
+      font-size: 18px;
+    }
+    .skills_page_category{
+      padding-left: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: italic;
+    }
+    .skills_page_text{
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="hero_page" style="background-color: #063953;">
+      <div class="pic_box">
+        <img class="prof_pic" src="photos/DSC_4373 (1).jpg">
+      </div>
+      <div class="name_box">
+        <div class="first_name">
+          <p class="hero_name">
+            Jervin Josh
+          </p>
+        </div>
+        <div class="last_name">
+          <p class="hero_name">
+            Valencia
+          </p>
+        </div>
+        <div class="title_box">
+          <p class="title"> ECE | ECT | Coding Coach and Curriculum Editor</p>
+        </div>
+        <div class="language_box">
+          <div class="language_icon"> <i class="devicon-python-plain"></i> </div>
+          <div class="language_icon"> <i class="devicon-cplusplus-plain"></i> </div>
+          <div class="language_icon"> <i class="devicon-latex-original"></i>
+          </div>
+          <div class="language_icon"> <i class="devicon-html5-plain"></i>
+          </i>
+          </div>
+          <div class="language_icon"> <i class="devicon-css3-plain"></i>
+          </i>
+          </div>
+          <div class="language_icon"> <i class="devicon-java-plain"></i>
+          </i>
+          </div>
+          <div class="language_icon"> <i class="devicon-javascript-plain"></i>
+          </i>
+          </i>
+          </div>
+          <div class="language_icon"> <i class="devicon-mysql-plain"></i>
+          </i>
+          </i>
+          </div>
+
+        </div>
+      </div>   
+    </div>
+    <div class="skills_page">
+      <div class="skills_page_header">
+        <p>Technical Skills</p>
+      </div>
+      <div class="skills_page_content">
+        <div class="tools_lang_skills">
+          <p class="skills_page_content_header">
+            Tools and Languages</p>
+          <div class="tools_lang_proficient">
+            <p class="skills_page_category">
+              Proficient in: 
+            </p>
+            <p class="skills_page_text"> Python, Visual Studio Code</p>
+          </div>
+          <div class="tools_lang_knowledgeable">
+            <p class="skills_page_category">
+              Knowledgeable in: 
+            </p>
+            <p class="skills_page_text"> HTML, CSS, Latex, Vim</p>
+          </div>
+          <div class="tools_lang_exp">
+            <p class="skills_page_category">
+              Experienced using: 
+            </p>
+            <p class="skills_page_text"> Java, JavaScript, mySQL,</p>
+            <p class="skills_page_text">  Docker, IntelliJ, Postman</p>
+          </div>
+        </div>
+        <div>
+          <p class="skills_page_content_header">
+            Quantitative Research</p>
+        </div>
+        <div>
+          <p class="skills_page_content_header">
+            Communication</p>
+        </div>
+      </div>
+    </div>
+    <div class="page" style="background-color: #BDC4C9;">
+      test    
+    </div>
+    <div class="page" style="background-color: #B95C41;">
+      test    
+    </div>
+  </div>
+
+</body>
+</html>
