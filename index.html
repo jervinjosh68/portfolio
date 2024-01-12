@@ -8,276 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400;1,8..144,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <style>
-    p {
-      font-family: Roboto Serif, Roboto, Arial;
-    }
-    .page{
-      height: 1000px;
-    }
-    .prof_pic{
-      height: 300px;
-      border-radius: 50%;
-      border: rgb(80, 78, 78);
-      border-width: 2px;
-      border-style: solid;
-    }
-    .hero_name{
-      color : white;
-      font-weight: 500;
-      font-size: 50px;
-    }
-    .title{
-      color : #BDC4C9;;
-      font-weight: 400;
-      font-size: 22px;
-    }
-    .main{
-      display: flex;
-      flex-direction: column;
-    }
-    .hero_page {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero_page{
-      height: 400px
-    }
-    .pic_box{
-      padding-left:50px;
-      
-    }
-    .name_box{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      min-width: 200px;
-    }
-    .first_name,
-    .last_name,
-    .title_box{
-      display: block;
-      position: relative;
-      text-align: start;
-      font-size: 50px;
-      padding-left: 50px;
-      padding-right: 100px;
-    }
-    .first_name{
-      margin-bottom: -50px;
-    }
-    .last_name{
-      margin-top:-50px;
-    }
-
-    .language_box {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: flex-start;
-      font-size: 30px;
-      color: #BDC4C9;
-      padding-left: 40px;
-      padding-bottom: 70px;
-    }
-    .language_icon{
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-    .skills_page{
-      display: flex;
-      flex-direction: column;
-      font-family: Roboto Serif;
-    }
-    .skills_page_header{
-      font-size: 22px;
-      font-weight: 600;
-      padding-top: 20px;
-      padding-left: 100px;
-    }
-    .skills_page_content{
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 20px;
-    }
-    .skills_page_content_header{
-      font-weight: 500;
-      font-size: 18px;
-    }
-    .skills_page_category{
-      padding-left: 10px;
-      font-size: 16px;
-      font-weight: 500;
-      font-style: italic;
-    }
-    .skills_page_text{
-      padding-left: 20px;
-      font-size: 14px;
-      font-weight: 400;
-    }
-    .projects_title{
-      font-weight: 500;
-      font-size: 18px;
-      text-align: center;
-    }
-    .projects_box{
-      padding-left:30px;
-      padding-right:30px;
-      padding-bottom: 20px;
-    }
-    .projects_button{
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .projects_try_it{
-      background-color:  #dc441a;
-      color: white;
-      border-color:  #dc441a;
-      font-family: Roboto Serif, Roboto, Arial;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 20px;
-      padding-left: 20px;
-      font-weight: 500;
-      cursor:pointer;
-    }
-    .projects_try_it:hover{
-      box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
-    }
-    .projects_try_it:active{
-      transform: translate(2px,2px) ;
-      box-shadow: none;
-
-    }
-    .projects_page,
-    .projects_button_box {
-      background-color:#f0efed;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-bottom: 20px;
-    }
-    .projects_page_header{
-      font-size: 22px;
-      font-weight: 600;
-      padding-top: 20px;
-      text-align: center;
-      background-color: #f0efed;
-    }
-    .projects_description{
-      font-size: 16px;
-      text-align: justify;
-    }
-    .exp_page_header{
-      background-color: #5B7F98;
-      color: white;
-      font-size: 22px;
-      font-weight: 600;
-      padding-top: 20px;
-      text-align: left;
-      padding-left: 100px;
-    }
-    .exp_page{
-      background-color: #5B7F98;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding-bottom: 30px;
-    }
-    .company_logo_box{
-      padding-top: 30px;
-      padding-left: 150px;
-      padding-bottom: 30px;
-      padding-right: 50px;
-    }
-    .exp_description_box{
-      display: flex;
-      flex-direction: column;
-    }
-    .tcs_logo{
-      width: 200px;
-      border-radius: 50%;
-      border: none;
-    }
-    .job_title{
-      font-weight: 500;
-      font-size: 21px;
-    }
-    .job_duration{
-      margin-top: -25px;
-      font-weight: 400;
-      font-size: 13px;
-    }
-    .job_description{
-      font-weight: 400;
-      font-size: 16px;
-    }
-    .educ_page_header{
-      font-weight: 600;
-      font-size: 22px;
-      padding-top: 20px;
-      text-align: left;
-      padding-left: 100px;
-    }
-    .educ_page{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 30px;
-    }
-    .educ_description_box{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .univ_logo_box{
-
-      padding-right: 20px;
-    }
-    .univ_name{
-      font-weight:500;
-      font-size: 18px;
-    }
-    .univ_logo{
-      width: 50px;
-      border: none;
-    }
-    .college_logo{
-      width:50px;
-    }
-    .college_logo_box{
-
-      padding-right: 20px;
-    }
-    .educ_college{
-      display: flex;
-      align-items: center;
-    }
-    .educ_univ{
-      display: flex;
-      align-items: center;
-    }
-    .educ_degree{
-      font-weight: 500;
-      font-size: 21px;
-    }
-    .course_page{
-      background-color: #f0efed;
-      display: flex;
-      justify-content: space-evenly;
-      
-    }
-    .course_page_header{
-      font-weight: 600;
-      font-size: 22px;
-      padding-top: 20px;
-      text-align: center;
-      background-color: #f0efed;
-    }
-    .course_box{
-      background-color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles/general.css">
 </head>
 <body>
   <div class="main">
@@ -459,26 +190,127 @@
     <div class="course_page">
       <div class="course_box">
         <div class="course_box_header">
-          <div class="course_icon">
-            <img src="./photos/eeei.png">
+          <div class="course_icon_box">
+            <img src="./photos/eeei.png" class="course_icon">
           </div>
           <div class="course_name">
-
+            <p>UP - EEEI</p>
+            <p> EEE 111</p>
+            <p>"Intro to Programming"</p>
           </div>
         </div>
         <div class="course_box_body">
-
+          <div class="course_description">
+            
+          </div>
+          <div class="course_tools">
+            <p>Languages/Tools used:</p>
+            <p>Python, Vim</p>
+          </div>
         </div>
       </div>
       <div class="course_box">
-        course2
+        <div class="course_box_header">
+          <div class="course_icon_box">
+            <img src="./photos/eeei.png" class="course_icon">
+          </div>
+          <div class="course_name">
+            <p>UP - EEEI</p>
+            <p> EEE 121  </p>
+            <p>"Algorithms and Data Structures"</p>
+          </div>
+        </div>
+        <div class="course_box_body">
+          <div class="course_description">
+            
+          </div>
+          <div class="course_tools">
+            <p>Languages/Tools used:</p>
+            <p>C++, VSCode</p>
+          </div>
+        </div>
       </div>
       <div class="course_box">
-        course3
+        <div class="course_box_header">
+          <div class="course_icon_box">
+            <img src="./photos/eeei.png" class="course_icon">
+          </div>
+          <div class="course_name">
+            <p>UP - EEEI</p>
+            <p> CoE 197 S</p>
+            <p>"Advanced Software Concepts"</p>
+          </div>
+        </div>
+        <div class="course_box_body">
+          <div class="course_description">
+            
+          </div>
+          <div class="course_tools">
+            <p>Languages/Tools used:</p>
+            <p>Java, Git, mySQL, IntelliJ, Docker, Postman</p>
+          </div>
+        </div>
+      </div>
+      <div class="course_box">
+        <div class="course_box_header">
+          <div class="course_icon_box">
+            <img src="./photos/eeei.png" class="course_icon">
+          </div>
+          <div class="course_name">
+            <p>UP - EEEI</p>
+            <p> ECE 197 Z</p>
+            <p>"Deep Learning"</p>
+          </div>
+        </div>
+        <div class="course_box_body">
+          <div class="course_description">
+            
+          </div>
+          <div class="course_tools">
+            <p>Languages/Tools used:</p>
+            <p>Python, Git, Hugginface, Pytorch, Vision Transformer</p>
+          </div>
+        </div>
+      </div>
+      <div class="course_box">
+        <div class="course_box_header">
+          <div class="course_icon_box">
+            <img src="./photos/eeei.png" class="course_icon">
+          </div>
+          <div class="course_name">
+            <p>UP - EEEI</p>
+            <p> EEE 198/199 </p>
+            <p>"Undergraduate Capstone Project"</p>
+          </div>
+        </div>
+        <div class="course_box_body">
+          <div class="course_description">
+            
+          </div>
+          <div class="course_tools">
+            <p>Languages/Tools used:</p>
+            <p>Python, Git, VSCode, Pytorch</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="page">
-      
+    <div class="contact_page">
+      <div class="contact_box"> 
+        <p>Email</p>
+        <p>jervinjoshvalencia68@gmail.com</p>
+      </div>
+      <div class="contact_box"> 
+        <p>Mobile</p>
+        <p>09154951318</p>
+      </div>
+      <div class="contact_box"> 
+        <p>Github</p>
+        <p>https://github.com/jervinjosh68</p>
+      </div>
+      <div class="contact_box"> 
+        <p>LinkedIn</p>
+        <p>https://www.linkedin.com/in/jervinjosh68/</p>
+      </div>
     </div>
   </div>
 

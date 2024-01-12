@@ -1,3 +1,316 @@
 p {
-  font-family: Arial
+  font-family: Roboto Serif, Roboto, Arial;
+}
+.page{
+  height: 1000px;
+}
+.prof_pic{
+  height: 300px;
+  border-radius: 50%;
+  border: rgb(80, 78, 78);
+  border-width: 2px;
+  border-style: solid;
+}
+.hero_name{
+  color : white;
+  font-weight: 500;
+  font-size: 50px;
+}
+.title{
+  color : #BDC4C9;;
+  font-weight: 400;
+  font-size: 22px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.hero_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hero_page{
+  height: 400px
+}
+.pic_box{
+  padding-left:50px;
+  
+}
+.name_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 200px;
+}
+.first_name,
+.last_name,
+.title_box{
+  display: block;
+  position: relative;
+  text-align: start;
+  font-size: 50px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+.first_name{
+  margin-bottom: -50px;
+}
+.last_name{
+  margin-top:-50px;
+}
+
+.language_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-size: 30px;
+  color: #BDC4C9;
+  padding-left: 40px;
+  padding-bottom: 70px;
+}
+.language_icon{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.skills_page{
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto Serif;
+}
+.skills_page_header{
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 100px;
+}
+.skills_page_content{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.skills_page_content_header{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills_page_category{
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+.skills_page_text{
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.projects_title{
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+.projects_box{
+  padding-left:30px;
+  padding-right:30px;
+  padding-bottom: 20px;
+}
+.projects_button{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.projects_try_it{
+  background-color:  #dc441a;
+  color: white;
+  border-color:  #dc441a;
+  font-family: Roboto Serif, Roboto, Arial;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+  cursor:pointer;
+}
+.projects_try_it:hover{
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
+}
+.projects_try_it:active{
+  transform: translate(2px,2px) ;
+  box-shadow: none;
+
+}
+.projects_page,
+.projects_button_box {
+  background-color:#f0efed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+}
+.projects_page_header{
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #f0efed;
+}
+.projects_description{
+  font-size: 16px;
+  text-align: justify;
+}
+.exp_page_header{
+  background-color: #5B7F98;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 100px;
+}
+.exp_page{
+  background-color: #5B7F98;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.company_logo_box{
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+}
+.exp_description_box{
+  display: flex;
+  flex-direction: column;
+}
+.tcs_logo{
+  width: 200px;
+  border-radius: 50%;
+  border: none;
+}
+.job_title{
+  font-weight: 500;
+  font-size: 21px;
+}
+.job_duration{
+  margin-top: -25px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.job_description{
+  font-weight: 400;
+  font-size: 16px;
+}
+.educ_page_header{
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 100px;
+}
+.educ_page{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.educ_description_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.univ_logo_box{
+
+  padding-right: 20px;
+}
+.univ_name{
+  font-weight:500;
+  font-size: 18px;
+}
+.univ_logo{
+  width: 50px;
+  border: none;
+}
+.college_logo{
+  width:50px;
+}
+.college_logo_box{
+
+  padding-right: 20px;
+}
+.educ_college{
+  display: flex;
+  align-items: center;
+}
+.educ_univ{
+  display: flex;
+  align-items: center;
+}
+.educ_degree{
+  font-weight: 500;
+  font-size: 21px;
+}
+.course_page{
+  background-color: #f0efed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+}
+.course_page_header{
+  font-weight: 600;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-left: 100px;
+  text-align: left;
+  background-color: #f0efed;
+
+}
+.course_icon{
+  width: 50px;
+}
+.course_icon_box{
+ padding-right: 20px;
+}
+.course_box{
+  background-color: white;
+  display: flex;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #5B7F98;
+  border-width: 1px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.course_box_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}
+.course_name{
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.course_box_body{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.contact_page{
+  background-color: #063953;
+  padding-bottom: 50px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact_box{
+  padding: 20px;
 }
