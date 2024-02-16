@@ -36,6 +36,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   height: 17vh
+  
 }
 
 .nav-links{
@@ -59,6 +60,7 @@ a:hover{
 
 .logo{
   font-size:2rem;
+  
 }
 
 .logo:hover{
@@ -163,6 +165,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  
 }
 
 .section__pic-container{
